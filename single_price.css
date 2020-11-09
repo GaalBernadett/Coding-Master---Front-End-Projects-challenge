@@ -1,0 +1,102 @@
+/* Main style start */
+body {
+    font-size: 1rem;
+    font-family: Karla;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+div {
+    padding: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+.grid-area-1 {
+    background-color: #fefefe;
+}
+
+.grid-area-2 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.grid-area-3 {
+    background-color: hsl(179, 100%, 40%);
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: #fefefe;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    padding: 0.8rem 6rem;
+    display: inline-block;
+    border: none;
+    margin-top: 3rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Main style end */
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+h3 {
+    color: #fefefe;
+}
+
+p {
+    color: hsl(218, 22%, 67%);
+}
+
+.description {
+    color: hsl(204, 43%, 93%);
+}
+
+.price {
+    color: #fefefe;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 2rem 0 0.5rem 0;
+}
+
+/* Footer style start */
+
+footer {
+    background-color: #fefefe;
+}
+
+.attribution { 
+    font-size: 0.65rem; 
+    text-align: center; 
+    margin: 1rem;
+}
+
+.attribution a { 
+    color: hsl(179, 62%, 43%); 
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-area-1 {
+        grid-column: span 2 / auto;
+    }
+}
